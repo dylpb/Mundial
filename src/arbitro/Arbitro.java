@@ -11,7 +11,7 @@ import personas.Persona;
  *
  * @author bycha
  */
-public abstract class Arbitro extends Persona {
+public class Arbitro extends Persona {
 
     protected String nombre;
     protected String nacionalidad;
