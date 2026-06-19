@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package jugadores;
+package arbitro;
 
 import java.time.LocalDate;
 import personas.Persona;
@@ -11,12 +11,12 @@ import personas.Persona;
  *
  * @author bycha
  */
-public abstract class Arbitro extends Persona {
-   
-protected String nombre;
-protected String nacionalidad;
-protected LocalDate fecha;
-protected String categoría;
+public class Arbitro extends Persona {
+
+    protected String nombre;
+    protected String nacionalidad;
+    protected LocalDate fecha;
+    protected String categoría;
 
     public String getNombre() {
         return nombre;
@@ -57,13 +57,13 @@ protected String categoría;
         this.categoría = categoría;
     }
 
- @Override
+    @Override
     public String toString() {
-        return "Nombre: " + nombre + 
-                "\nEdad: " + this.getEdad() + 
-                "\nNacionalidad: " + nacionalidad + 
-                "\nFecha=" + fecha +
-                "\ncategoría=" + categoría;
+        return "Nombre: " + nombre
+                + "\nEdad: " + this.getEdad()
+                + "\nNacionalidad: " + nacionalidad
+                + "\nFecha=" + fecha
+                + "\ncategoría=" + categoría;
     }
-    
+
 }
