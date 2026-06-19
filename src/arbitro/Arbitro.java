@@ -13,49 +13,22 @@ import personas.Persona;
  */
 public class Arbitro extends Persona {
 
-    protected String nombre;
-    protected String nacionalidad;
-    protected LocalDate fecha;
     protected String categoría;
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getNacionalidad() {
-        return nacionalidad;
-    }
-
-    public LocalDate getfecha() {
-        return fecha;
-    }
 
     public String getCategoría() {
         return categoría;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setNacionalidad(String nacionalidad) {
-        this.nacionalidad = nacionalidad;
-    }
-
-    public void setFecha(LocalDate fecha) {
-        this.fecha = fecha;
     }
 
     public void setCategoría(String categoría) {
         this.categoría = categoría;
     }
 
-    public Arbitro(String nombre, String nacionalidad, LocalDate fecha, String categoría) {
-        this.nombre = nombre;
-        this.nacionalidad = nacionalidad;
-        this.fecha = fecha;
+    public Arbitro(String categoría, String nombre, String nacionalidad, LocalDate fecha) {
+        super(nombre, nacionalidad, fecha);
         this.categoría = categoría;
     }
+
+  
 
     @Override
     public String toString() {
