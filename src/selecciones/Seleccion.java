@@ -47,9 +47,10 @@ public class Seleccion {
         this.entrenador = entrenador;
     }
     
-    public int buscarJugador(Jugador[] jugadores) {
-        for (int i = 0; i < 22; i++) {
-            if (jugadores == null ? jugadores [i] == null : jugadores.equals(i)) {
+    public int buscarJugador(String nombre) {
+        for (int i = 0; i < jugadores.length; i++) {
+            if(jugadores[i]!=null &&
+                    jugadores[i].getNombre().equalsIgnoreCase(nombre)){
               
                 return i;
             }
