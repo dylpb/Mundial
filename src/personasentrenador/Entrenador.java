@@ -11,20 +11,23 @@ import personas.Persona;
  */
 public class Entrenador extends Persona{
     
-    protected int añosExperiencia;
+    private int añosExperiencia;
 
     public int getAñosExperiencia() {
         return añosExperiencia;
-    }
+    } 
+    
 
     public void setAñosExperiencia(int añosExperiencia) {
         this.añosExperiencia = añosExperiencia;
     }
     
+    
     public Entrenador(String nombre, String nacionalidad, LocalDate fecha, int añosExperiencia){
         super(nombre, nacionalidad, fecha);
         this.añosExperiencia=añosExperiencia;
     }
+    
     
     @Override
     public String toString() {
@@ -32,6 +35,7 @@ public class Entrenador extends Persona{
                 + ", Años de experiencia: "
                 + añosExperiencia;
     }
+    
     
     
 }

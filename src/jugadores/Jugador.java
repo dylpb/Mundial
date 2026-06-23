@@ -11,24 +11,28 @@ import java.time.LocalDate;
  */
 public class Jugador extends Persona{
     
-   protected int numero;
-   protected String posicion;
+   private int numero;
+   private String posicion;
    
     public int getNumero() {
         return numero;
     }
 
+    
     public String getPosicion() {
         return posicion;
     }
 
+    
     public void setNumero(int numero) {
         this.numero = numero;
     }
 
+    
     public void setPosicion(String posicion) {
         this.posicion = posicion;
     }
+    
     
     
     
@@ -38,9 +42,11 @@ public class Jugador extends Persona{
        this.posicion=posicion;
    }
    
+   
    @Override
    public String toString(){
        return "Jugador: "+super.toString()+", Numero: "+numero+", Posicion: "+posicion;
    }
+  
    
 }
